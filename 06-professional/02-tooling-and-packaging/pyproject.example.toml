@@ -1,0 +1,22 @@
+[project]
+name = "example-app"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "pyright>=1.1",
+]
+
+[project.scripts]
+example-app = "example_app.cli:main"
+
+# SAME idea as npm scripts — teams often use:
+#   uv run pytest
+#   uv run ruff check .
+#   uv run pyright
