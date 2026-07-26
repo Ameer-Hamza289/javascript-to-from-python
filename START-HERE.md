@@ -9,6 +9,7 @@ Order:
 3. Read `NOTES.md` (differences that matter)
 4. Skim [cheatsheet.md](cheatsheet.md) after every 2–3 lessons
 5. Do [04-practice](04-practice) exercises in **Python**
+6. Complete [06-professional](06-professional) for team-ready Python
 
 ### B) Python developer → learning JavaScript
 Order:
@@ -17,13 +18,15 @@ Order:
 3. Read `NOTES.md` (differences that matter)
 4. Skim [cheatsheet.md](cheatsheet.md) after every 2–3 lessons
 5. Do [04-practice](04-practice) exercises in **JavaScript**
+6. Complete [06-professional](06-professional) for team-ready JS
 
 ## Suggested pace
 - Days 1–3: Fundamentals 01–04
 - Days 4–6: Fundamentals 05–08
 - Days 7–9: Intermediate (including async)
 - Days 10–12: OOP
-- Day 13+: [Practice](04-practice) + [Quiz](05-quiz/index.html) + rewrite NOTES you marked
+- Days 13–16: [Professional track](06-professional) (types, tools, tests, stdlib, concurrency, prod)
+- Ongoing: [Practice](04-practice) + [Quiz](05-quiz/index.html)
 
 ## Quiz
 Open [05-quiz/index.html](05-quiz/index.html) in a browser.

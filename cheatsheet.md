@@ -73,6 +73,19 @@ Quick syntax map. Details and exceptions live in each lesson's `NOTES.md`.
 | Parallel | `Promise.all([...])` | `asyncio.gather(...)` |
 | Start | call async fn (runtime loop) | `asyncio.run(main())` |
 
+## Professional quick map
+
+| | JavaScript | Python |
+|---|------------|--------|
+| Types | TypeScript / JSDoc | `typing` + pyright/mypy |
+| Manifest | `package.json` | `pyproject.toml` |
+| Deps | npm / pnpm | uv / pip + venv |
+| Test | Jest / Vitest / `node:test` | pytest |
+| Paths | `node:path` | `pathlib` |
+| Schemas | Zod | Pydantic |
+| Null default | `??` | `x if x is not None else …` |
+| CPU parallel | worker_threads | ProcessPoolExecutor |
+
 ## Truthiness gotchas
 
 | Value | JS truthy? | Python truthy? |

@@ -63,6 +63,18 @@ Whether you're a JS developer learning Python, or a Python developer learning JS
 | 04 | [Polymorphism & Duck Typing](03-oop/04-polymorphism) | Interfaces vs duck typing |
 | 05 | [Special Methods & Operators](03-oop/05-special-methods) | toString ↔ `__str__`, operator overloading |
 
+### 06 — Professional (mid-senior bridge)
+| # | Topic | What you'll relate |
+|---|-------|--------------------|
+| 01 | [Typing](06-professional/01-typing) | TS/JSDoc ↔ `typing` / Protocol / TypedDict |
+| 02 | [Tooling & Packaging](06-professional/02-tooling-and-packaging) | npm/node ↔ pip/uv/venv |
+| 03 | [Testing](06-professional/03-testing) | `node:test`/Jest ↔ pytest |
+| 04 | [Stdlib Day-One](06-professional/04-stdlib-day-one) | fs/path/fetch ↔ pathlib/json/collections |
+| 05 | [Concurrency Beyond Basics](06-professional/05-concurrency-beyond-basics) | workers ↔ threads/processes/GIL |
+| 06 | [Errors & Null Style](06-professional/06-errors-and-null-style) | `?.` `??` ↔ `Optional` / Result style |
+| 07 | [Ecosystem Bridge](06-professional/07-ecosystem-bridge) | Express↔FastAPI, Zod↔Pydantic, … |
+| 08 | [Production Habits](06-professional/08-production-habits) | env, logging, layout, CI hygiene |
+
 ### Extra
 - [Cheatsheet](cheatsheet.md) — quick syntax map
 - [Practice exercises](04-practice) — apply both languages on the same problems
@@ -78,9 +90,12 @@ node 01-fundamentals/01-variables-and-types/js.js
 
 # Python 3
 python 01-fundamentals/01-variables-and-types/py.py
+
+# Built-in JS tests (professional track)
+node --test 06-professional/03-testing/js.js
 ```
 
-No frameworks. No build step. Just open a file, run it, compare.
+Language lessons need no framework. Professional tooling notes show the real-world stack you'll use on a team.
 
 ---
 
