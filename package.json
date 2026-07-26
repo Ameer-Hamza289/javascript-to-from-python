@@ -1,0 +1,6 @@
+{
+  "name": "js-and-py",
+  "private": true,
+  "type": "module",
+  "description": "Side-by-side JavaScript and Python learning bridge"
+}
