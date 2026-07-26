@@ -10,4 +10,4 @@ export function multiply(a, b) {
 
 export default function greet(name) {
   return `Hello, ${name}`;
-}
+}};

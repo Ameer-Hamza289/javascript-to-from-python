@@ -282,4 +282,110 @@ const QUESTIONS = [
     ],
     explain: "Same structure, different keywords: catch↔except, throw↔raise.",
   },
+  {
+    id: "venv",
+    topic: "Tooling",
+    promptJsToPy:
+      "Node keeps deps in project `node_modules`. What's the Python must-do equivalent habit?",
+    promptPyToJs:
+      "Python projects use a virtual environment for deps. What's the JS project-local equivalent?",
+    choicesJsToPy: [
+      {
+        text: "Create/use a venv (or uv/poetry env) — don't install project deps globally",
+        correct: true,
+      },
+      { text: "Always `npm i -g` equivalents with pip", correct: false },
+      { text: "Commit site-packages into git", correct: false },
+    ],
+    choicesPyToJs: [
+      {
+        text: "`node_modules` installed from package.json (prefer local + npx)",
+        correct: true,
+      },
+      { text: "A required `venv/` folder checked into git", correct: false },
+      { text: "Global npm installs for every project dep", correct: false },
+    ],
+    explain:
+      "JS: project-local node_modules. Python: project-local virtualenv/uv env. Same idea — isolate dependencies.",
+  },
+  {
+    id: "pytest-jest",
+    topic: "Testing",
+    promptJsToPy: "If you know Jest/Vitest, what's the default Python test stack on most teams?",
+    promptPyToJs: "If you know pytest, which JS runners will feel familiar?",
+    choicesJsToPy: [
+      { text: "pytest (assert + fixtures + parametrize)", correct: true },
+      { text: "JUnit only", correct: false },
+      { text: "unittest is required; pytest is rare", correct: false },
+    ],
+    choicesPyToJs: [
+      { text: "Jest, Vitest, or Node's built-in `node:test`", correct: true },
+      { text: "Only Mocha from 2014", correct: false },
+      { text: "pytest-js", correct: false },
+    ],
+    explain: "pytest ↔ Jest/Vitest/node:test. Learn discovery, assert style, and mocking next.",
+  },
+  {
+    id: "nullish",
+    topic: "Null style",
+    promptJsToPy:
+      "JS `??` only falls through for null/undefined. What's the careful Python equivalent for defaults?",
+    promptPyToJs:
+      "Python seniors often write `x if x is not None else default`. Which JS operator matches that intent?",
+    choicesJsToPy: [
+      { text: "`x if x is not None else default` (not bare `or`)", correct: true },
+      { text: "`x or default` always", correct: false },
+      { text: "`x ?? default` works in Python 3", correct: false },
+    ],
+    choicesPyToJs: [
+      { text: "`??` (nullish coalescing)", correct: true },
+      { text: "`||` always — same for 0 and ''", correct: false },
+      { text: "`?= `", correct: false },
+    ],
+    explain:
+      "`??` / `is not None` preserve valid falsy values like 0 and empty string. `||` / `or` do not.",
+  },
+  {
+    id: "cpu-parallel",
+    topic: "Concurrency",
+    promptJsToPy:
+      "For CPU-heavy pure Python, why aren't threads enough?",
+    promptPyToJs:
+      "For CPU-heavy JavaScript on Node, what do you reach for?",
+    choicesJsToPy: [
+      {
+        text: "The GIL — use processes (ProcessPool) or native extensions",
+        correct: true,
+      },
+      { text: "Threads give true multi-core Python by default", correct: false },
+      { text: "asyncio.gather parallelizes CPU automatically", correct: false },
+    ],
+    choicesPyToJs: [
+      {
+        text: "`worker_threads` or `child_process` — don't block the event loop",
+        correct: true,
+      },
+      { text: "More `await`s on the main thread", correct: false },
+      { text: "Only `Promise.all` on tight loops", correct: false },
+    ],
+    explain:
+      "Async helps I/O. CPU needs another core: Workers (JS) or processes (Python), mindful of the GIL.",
+  },
+  {
+    id: "zod-pydantic",
+    topic: "Ecosystem",
+    promptJsToPy: "Zod runtime schemas in TS land map most closely to what in Python?",
+    promptPyToJs: "Pydantic models for validation map most closely to what in TS/JS?",
+    choicesJsToPy: [
+      { text: "Pydantic", correct: true },
+      { text: "pickle", correct: false },
+      { text: "ruff", correct: false },
+    ],
+    choicesPyToJs: [
+      { text: "Zod (or similar schema validators)", correct: true },
+      { text: "Prettier", correct: false },
+      { text: "npm audit", correct: false },
+    ],
+    explain: "Zod ↔ Pydantic: validate data at the edges (HTTP payloads, env, etc.).",
+  },
 ];
