@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bridge — JS ↔ Python Quiz</title>
+    <meta
+      name="description"
+      content="Relate JavaScript and Python. Spot the differences that matter."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section id="path-screen">
+        <h1 class="brand">Bridge<span>.</span></h1>
+        <p class="lede">
+          Relate JavaScript and Python. Ten questions. The traps are the lesson.
+        </p>
+        <div class="cta-row">
+          <button class="path-btn" type="button" data-path="js-to-py">
+            I know JS → quiz me on Python
+          </button>
+          <button class="path-btn secondary" type="button" data-path="py-to-js">
+            I know Python → quiz me on JS
+          </button>
+        </div>
+        <p class="hint">Open <code>index.html</code> directly in your browser — no build step.</p>
+      </section>
+
+      <section id="quiz-screen" hidden>
+        <div class="meta">
+          <span class="topic" id="topic"></span>
+          <span id="progress"></span>
+        </div>
+        <h2 class="prompt" id="prompt"></h2>
+        <div class="choices" id="choices"></div>
+        <p class="feedback" id="feedback" hidden></p>
+        <button class="next-btn" id="next-btn" type="button" hidden>Next</button>
+      </section>
+
+      <section id="result-screen" hidden>
+        <p class="score" id="score"></p>
+        <p class="summary" id="summary"></p>
+        <button class="restart-btn" id="restart-btn" type="button">
+          Try the other path
+        </button>
+      </section>
+    </main>
+
+    <script src="./questions.js"></script>
+    <script src="./quiz.js"></script>
+  </body>
+</html>

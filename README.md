@@ -52,6 +52,7 @@ Whether you're a JS developer learning Python, or a Python developer learning JS
 | 02 | [Modules](02-intermediate/02-modules) | `import`/`export` ↔ `import`/`from` |
 | 03 | [Functional Patterns](02-intermediate/03-functional-patterns) | map/filter/reduce ↔ list comps |
 | 04 | [Destructuring & Unpacking](02-intermediate/04-destructuring-unpacking) | Object/array destructuring ↔ unpacking |
+| 05 | [Async / Await](02-intermediate/05-async-await) | Promises ↔ asyncio, gather ↔ Promise.all |
 
 ### 03 — Object-Oriented Programming
 | # | Topic | What you'll relate |
@@ -65,6 +66,7 @@ Whether you're a JS developer learning Python, or a Python developer learning JS
 ### Extra
 - [Cheatsheet](cheatsheet.md) — quick syntax map
 - [Practice exercises](04-practice) — apply both languages on the same problems
+- [Interactive quiz](05-quiz/index.html) — pick JS→Python or Python→JS and drill the gotchas
 
 ---
 

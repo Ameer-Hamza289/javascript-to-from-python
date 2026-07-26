@@ -21,9 +21,13 @@ Order:
 ## Suggested pace
 - Days 1–3: Fundamentals 01–04
 - Days 4–6: Fundamentals 05–08
-- Days 7–8: Intermediate
-- Days 9–11: OOP
-- Day 12+: Practice set + rewrite NOTES you marked
+- Days 7–9: Intermediate (including async)
+- Days 10–12: OOP
+- Day 13+: [Practice](04-practice) + [Quiz](05-quiz/index.html) + rewrite NOTES you marked
+
+## Quiz
+Open [05-quiz/index.html](05-quiz/index.html) in a browser.
+Choose your direction and answer 10 randomized gotcha questions.
 
 ## Study rule
 When you see `DIFF` or `GOTCHA`, write one sentence in your own words.

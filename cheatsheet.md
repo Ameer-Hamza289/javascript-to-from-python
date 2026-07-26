@@ -63,6 +63,16 @@ Quick syntax map. Details and exceptions live in each lesson's `NOTES.md`.
 | Private | `#field` | `_field` / `__field` |
 | toString | `toString()` | `__str__` |
 
+## Async
+
+| | JavaScript | Python |
+|---|------------|--------|
+| Async fn | `async function f()` | `async def f():` |
+| Await | `await promise` | `await awaitable` |
+| Delay | `Promise` + `setTimeout` | `asyncio.sleep` |
+| Parallel | `Promise.all([...])` | `asyncio.gather(...)` |
+| Start | call async fn (runtime loop) | `asyncio.run(main())` |
+
 ## Truthiness gotchas
 
 | Value | JS truthy? | Python truthy? |
